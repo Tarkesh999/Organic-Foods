@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarak - Organics & Food Shop</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">	<link rel="stylesheet" href="./style.css">
+	<script src="./index.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="preload">
+	<header>
+		<h1>Tarak Organics</h1>
+		<nav class="top-nav">
+			<ul class="nav-links">
+				<li><a href="#" class="anc">Home</a></li>
+				<li><a href="#" class="anc">Shop</a></li>
+				<li><a href="#" class="anc">Blog</a></li>
+			</ul>
+		</nav>
+
+		<div class="top-section">
+			<button class="top-icons Search" id="search_icon"><i class="fa fa-search" style="font-size:2.5vw;"aria-hidden="true" onclick="open_search()"></i></button>
+			<button class="top-icons Profile"><i class="fa fa-user" style="font-size:2.5vw;" aria-hidden="true"></i></button>
+			<button class="top-icons Cart"><i class="fa fa-shopping-cart" style="font-size:2.5vw;" aria-hidden="true"></i></button>		
+		</div>
+	</header>
+
+	<div class="search-click">
+		<button class="close-button"><i class="fa fa-times" style="font-size:2.5vw;" aria-hidden="true" onclick="close_search()"></i></button>
+		<input type="search" placeholder="Search..." name="search-overlay" class="search-inp">
+	</div>
+
+	<main>
+		<div class="first-layout">
+			<img src="./images/StrawBerry_1920x780.jpg" alt="StrawBerry Background" style="width:100%;">
+			<h2 class="img-text-main">100% Natural<br>Healthy Food For Life</h2>
+			<h5 class="img-text-sub">Starting at 30rs</h5>
+			<button class="cover-one"><i class="fa fa-circle" style="font-size:1.5vw; color: green;" aria-hidden="true" onclick="circle1_click()"></i></button>		
+			<button class="cover-two"><i class="fa fa-circle" style="font-size:1.5vw; color: white;" aria-hidden="true" onclick="circle2_click()"></i></button>		
+		</div>
+
+		<div class="second-layout">
+			<img src="./images/Vegetables Bag_1920x780.jpg" alt="Vegetables Background" style="width:100%;">
+			<h2 class="img-text-main">100% Natural<br>Healthy Food For Life</h2>
+			<h5 class="img-text-sub">Starting at 30rs</h5>
+			<button class="cover-one"><i class="fa fa-circle" style="font-size:1.5vw; color: white;" aria-hidden="true" onclick="circle1_click()"></i></button>		
+			<button class="cover-two"><i class="fa fa-circle" style="font-size:1.5vw; color: green;" aria-hidden="true" onclick="circle2_click()"></i></button>		
+		</div>
+
+		<div class="cards">
+			<button class="card-nav left">
+				<i class="fa fa-angle-double-left" onclick="left_cards()"></i>
+			</button>
+			
+			<div class="fruit-cards">
+				<img src="./images/Dragon Fruit.jpg" alt="Dragon Fruit" class="fruit-img">
+				<div class="middle">
+				    <button class="like-button">
+				    	<i class="fa fa-heart" style="font-size: 35px;"></i>
+				    </button>
+				    <button class="cart-button">
+				    	<i class="fa fa-shopping-cart" style="font-size: 35px;"></i>	
+				    </button>				    				    
+				</div>				
+			</div>
+
+			<div class="fruit-cards">
+				<img src="./images/Lichi.jpg" alt="Lichi" class="fruit-img">
+				<div class="middle">
+				    <button class="like-button">
+				    	<i class="fa fa-heart" style="font-size: 35px;"></i>
+				    </button>
+				    <button class="cart-button">
+				    	<i class="fa fa-shopping-cart" style="font-size: 35px;"></i>	
+				    </button>				    				    
+				</div>				
+			</div>
+
+			<div class="fruit-cards">
+				<img src="./images/Avacado.jpg" alt="Avacado" class="fruit-img">
+				<div class="middle">
+				    <button class="like-button">
+				    	<i class="fa fa-heart" style="font-size: 35px;"></i>
+				    </button>
+				    <button class="cart-button">
+				    	<i class="fa fa-shopping-cart" style="font-size: 35px;"></i>	
+				    </button>				    				    
+				</div>				
+			</div>			
+
+			<div class="fruit-cards" style="display: none;">
+				<img src="./images/Apple.jpg" alt="Apple" class="fruit-img">
+				<div class="middle">
+				    <button class="like-button">
+				    	<i class="fa fa-heart" style="font-size: 35px;"></i>
+				    </button>
+				    <button class="cart-button">
+				    	<i class="fa fa-shopping-cart" style="font-size: 35px;"></i>	
+				    </button>				    				    
+				</div>				
+			</div>
+
+			<div class="fruit-cards" style="display: none;">
+				<img src="./images/Kiwi.jpg" alt="Kiwi" class="fruit-img" >
+				<div class="middle">
+				    <button class="like-button">
+				    	<i class="fa fa-heart" style="font-size: 35px;"></i>
+				    </button>
+				    <button class="cart-button">
+				    	<i class="fa fa-shopping-cart" style="font-size: 35px;"></i>	
+				    </button>				    				    
+				</div>				
+			</div>
+			<div class="fruit-cards" style="display: none;">
+				<img src="./images/StrawBerry.jpg" alt="StrawBerry" class="fruit-img">
+				<div class="middle">
+				    <button class="like-button">
+				    	<i class="fa fa-heart" style="font-size: 35px;"></i>
+				    </button>
+				    <button class="cart-button">
+				    	<i class="fa fa-shopping-cart" style="font-size: 35px;"></i>	
+				    </button>				    				    
+				</div>				
+			</div>
+			
+			<button class="card-nav right">
+				<i class="fa fa-angle-double-right" onclick="right_cards()"></i>
+			</button>
+		</div>
+
+	</main>
+	<footer>
+		<div class="about">
+			<h2 class="footer-heading">Tarak Organics</h2>
+			<p class="descr">The production is natural with no added fertilizers or any sort of chemical treatment. It's quite healthy and completely eco-friendly.</p>
+		</div>
+
+
+		<div class="info">
+			<h2 class="footer-heading">INFORMATION</h2>
+			<nav class="bottom-nav">
+				<ul class="bottom-links">
+					<li class="link"><a href="#" >New Products</a></li>
+					<li class="link"><a href="#" >Our Blog</a></li>
+					<li class="link"><a href="#" >About Us</a></li>
+					<li class="link"><a href="#" >Services</a></li>
+					<li class="link"><a href="#" >Top Sellers</a></li>
+					<li class="link"><a href="#" >Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="my-account">
+			<h2 class="footer-heading">MY ACCOUNT</h2>
+			<nav class="bottom-nav">
+				<ul class="bottom-links">
+					<li class="link"><a href="#">My Account</a></li>
+					<li class="link"><a href="#">Checkout</a></li>
+					<li class="link"><a href="#">Validation</a></li>
+					<li class="link"><a href="#">Wishlist</a></li>
+					<li class="link"><a href="#">Cart</a></li>
+					<li class="link"><a href="#">Terms of Use</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="contact">
+			<h2 class="footer-heading">CONTACT US</h2>
+			<nav class="bottom-nav">
+				<ul class="bottom-links">
+					<li class="link"><a href="#" >Address</a></li>
+					<li class="link"><a href="#" >Phone Number</a></li>
+					<li class="link"><a href="#">Email</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+</body>
+
+</html>
